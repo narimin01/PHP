@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/User's/Desktop/narimin/css/Home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./Home_files/style.css">
+  </head>
+  <body>
+    <header>
+      <nav >
+        <a href="Home.html"><h2>Spicy Pizza</h2></a>
+        <button id='BTNMENU'>MENU</button>
+        <ul id="menu">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="banner-image">
+          <h2 class="text-first-pizza">The First Spicy Pizza in Town</h2>
+          <h4 class="text-spicy-flavors">
+            <span>Spicy Flavors.</span> Tasty Pizza.
+          </h4>
+          <button class="btn-order"><a href="">Order Now</a></button>
+        </div>
+        <section id="banner">
+          <h3 class="fp">Featured Pizzas</h3>
+          <div class="menu-3">
+            <div>
+              <img src="./Home_files/hawaiian.jpg" alt="">
+              <h4 class="Spicy">Spicy Margharita<br>350.00</h4>
+            </div>
+            <div>
+              <img src="./Home_files/peperoni.jpg" alt="">
+              <h4 class="Pepperoni">Pepperoni Inferno<br>420.00</h4>
+            </div>
+            <div>
+              <img src="./Home_files/spicy.jpg" alt="">
+              <h4 class="Veggie">Veggie Delight<br>300.00</h4>
+         </section>
+       </section>
+        <section>
+          <div class="btnproduct">
+              <button class="btn-product"> <a href="">View more product</a></button>
+          </div>
+        </section>
+        <section id="customer-feedback">
+          <div class="horizontal-line"></div>
+
+          <h2>What Our Customers Says</h2>
+
+          <div class="feedback">
+              <div class="comm1">
+                  <p>"These pizza are the perfect blend of flavor and spice.  A true delight!! " <br>
+                      - Maria S.</p>
+              </div>
+
+              <div class="comm2">
+                  <p>"Spicy pizzas like these are hard to find. The Peperonni Infernois a must-try! <br>
+                      - John D.</p>
+              </div>
+
+              <div class="clearfix"></div>
+          </div>
+      </section>
+  </main>
+  <footer>
+      <p>Copyright 2023 Spicy Pizza. All rights reserved.</p>
+  </footer>
+    <script>
+      let menu=document.getElementById('BTNMENU');
+      let menu1=document.getElementById('menu');
+      menu.addEventListener('click', () => {
+
+         if (menu1.style.display==="flex"){
+          menu1.style.display="none"
+         }else{
+          menu1.style.display="flex"
+         }                                     
+      });
+  </script>
+  </body>
+</html>
