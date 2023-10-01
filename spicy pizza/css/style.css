@@ -1,0 +1,112 @@
+
+.navbar.navbar-expand-lg .navbar-nav {
+    display: flex;
+    margin-right: 10px;
+}
+.navbar{
+    border-bottom: 1px solid black;
+    background-color: red;
+    display: flex;
+    position: absolute;
+}
+.bg-menu:hover{
+    font-weight: 700;
+    color: gray;
+    box-shadow: 0 3px 6px rgb(221, 32, 32), 0 3px 6px rgb(206, 47, 47);
+}
+li:hover{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: gray;
+    box-shadow: 0 3px 6px rgb(221, 32, 32), 0 3px 6px rgb(206, 47, 47);
+    transform: translate(10px, 0px);
+}
+nav{
+    border-bottom: 1px solid black;
+    background-color: red;
+    display: flex;
+    position: absolute;
+}
+.navbar-brand{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: gray;
+}
+.navbar-brand:hover{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: gray;
+    box-shadow: 0 3px 6px rgb(221, 32, 32), 0 3px 6px rgb(206, 47, 47);
+    transform: translate(12px, 0px);
+}
+
+section{
+    border-top: 1px solid black;
+}
+.bg-red{
+    background:linear-gradient(190deg, red, transparent);
+}
+.bg-black{
+    background:linear-gradient(150deg, rgb(3, 3, 3), transparent);
+}
+.bg-gray{
+    background-color: rgb(54, 48, 48);
+    color: gainsboro;
+}
+th{
+    background:transparent;
+    border-color: none;
+    border-style: none; 
+    /* border-width: 0; */
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+}
+td{
+    background:transparent;
+    border-color: none;
+    border-style: none; 
+    /* border-width: 0; */
+}
+button{
+    display: flex;
+    width: 100px;
+    /* height: 40px; */
+    justify-content: center;
+    align-content: center;
+}
+.table{
+    background:transparent;
+}
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    color: var(--bs-table-color-state,var(--bs-table-color-type,var(--bs-table-color)));
+    background:transparent;
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state,var(--bs-table-bg-type,var(--bs-table-accent-bg)));
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
